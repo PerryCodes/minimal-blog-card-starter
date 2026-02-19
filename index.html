@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <title>devChallenges.io | Minimal Blog Card</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        background: #f9f9f9;
+        font-family: "Sora", sans-serif;
+        font-size: 0.875rem; /* 14px */
+        padding-top: 164px; /* 164px from top */
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 1rem 1rem 1.25rem 1rem; /* top right bottom left - 16px 16px 20px 16px */
+        box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+        border: 1px solid rgba(0, 0, 0, 0.04); /* subtle edge for light backgrounds */
+        width: 368px;
+        max-width: 100%; /* ensures responsiveness on smaller screens */
+      }
+
+      .card img {
+        margin-bottom: 1rem;
+      }
+
+      .card .tag {
+        margin-bottom: 1rem;
+      }
+
+      .card .title {
+        margin-bottom: 0.375rem;
+      }
+
+      .card p {
+        margin-bottom: 1.25rem;
+      }
+
+      .title {
+        font-size: 1.125rem; /* 18px */
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 0.375rem 1rem; /* 6px top/bottom, 16px left/right */
+        border-radius: 999px;
+        color: #7c19ee;
+        background: #f2eafd;
+        font-size: 0.625rem; /* 10px */
+        text-decoration: none;
+        align-self: flex-start;
+      }
+
+      footer {
+        font-size: 0.75rem; /* 12px */
+      }
+
+      footer hr {
+        width: 100%;
+        border: none;
+        border-top: 1px solid #e5e7eb;
+        margin-bottom: 1.25rem;
+      }
+
+      .dev-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .dev-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <img src="resources/Cactus.jpg" alt="a lonely cactus in the desert" />
+        <span class="tag">Design</span>
+        <h1 class="title">Embracing Minimalism</h1>
+        <p>
+          From minimalist sculptures to minimalist paintings, this blog will
+          inspire you to appreciate the beauty that lies in simplicity.
+        </p>
+        <footer>
+          <hr />
+          <span class="author">Annie Spratt</span>
+        </footer>
+      </article>
+    </main>
+
+    <div class="dev-info">
+      Coded by
+      <a href="#">Jason Perry</a>
+      | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank">
+        devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
